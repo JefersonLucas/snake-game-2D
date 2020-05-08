@@ -1,6 +1,5 @@
-#stage{
+#canvas{
 	border: 5px solid black;
 	margin: auto;
 	display: flex;
-	border-radius: 1%;
 }

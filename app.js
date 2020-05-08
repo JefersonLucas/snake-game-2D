@@ -1,97 +1,100 @@
 window.onload = function() {
 
-	var stage = document.getElementById('stage');
-	var ctx = stage.getContext("2d");
+	var canvas = document.getElementById('canvas');
+	var context = canvas.getContext("2d");
 
-	document.addEventListener("keydown", keyPush);
-
-	setInterval(game, 60);
-
-	const vel = 1;
+	document.addEventListener("keydown", function keyPush(event){
 	
-	var nome = prompt("Seu nome:");
-	var vx = 1;
-	var	vy = 0;
-	var px = 10;
-	var py = 15;
-	var tp = 20;
-	var qp = 30;
-	var ax=ay=15;
-		
-	var trail = [];
-	tail = 2;
+		console.log(event);
+		switch(event.keyCode) {
+			
+			case 37:
+				speedX = - speed;
+				speedY = 0;
+				break;
+			case 38:
+				speedX = 0;
+				speedY = - speed;
+				break;
+			case 39:
+				speedX = speed;
+				speedY = 0;
+				break;
+			case 40:
+				speedX = 0;
+				speedY = speed;
+				break;
+		}
+	});
 
+	setInterval(game, 60);	
+	var snake = [];
+	const speed = 1;
+	var speedX = 1;
+	var	speedY = 0;	
+	var stage = 30;
+	var size = 20;
+	var positionX = positionY = Math.floor(Math.random()*stage);
+	var foodX = foodY=15;
+	var tail = 2;
+	var name = prompt("Your name");
+	
+	var name = (name == "" || name == " " || name == null || name == undefined) ? 'Player' : name;
 
 	function game(){
 
-		px += vx;
-		py += vy;
-		score = 0;
+		var score = 0;
+		positionX += speedX;
+		positionY += speedY;
+		
+		if (positionX <0) {
+			positionX = stage-1; 
+		}
+		if (positionX > stage-1) {
+			positionX = 0;
+		}
+		if (positionY < 0) {
+			positionY = stage-1;
+		}
+		if (positionY > stage-1) {
+			positionY = 0;
+		}
 
-		if (px <0) {
-			px = qp-1; 
-		}
-		if (px > qp-1) {
-			px = 0;
-		}
 
-		if (py < 0) {
-			py = qp-1;
-		}
-		if (py > qp-1) {
-			py = 0;
-		}
+		context.shadowBlur = 20;
+		context.shadowColor = "gray";
 
-		ctx.fillStyle = "white";
-		ctx.fillRect(0,0, stage.width, stage.height);
+		context.fillStyle = "#ccc";
+		context.fillRect(0,0, canvas.width, canvas.height);
 				
-		ctx.fillStyle = "red";
-		ctx.fillRect(ax*tp, ay*tp, tp,tp);
+		context.fillStyle = "red";
+		context.fillRect(foodX*size, foodY*size, size,size);
 
-		ctx.fillStyle = "black";
-		for (var i = 0; i < trail.length; i++) {
-			ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp-1,tp-1);
+		context.fillStyle = "black";
+
+		for (var i = 0; i < snake.length; i++) {
+			context.fillRect(snake[i].x*size, snake[i].y*size, size-1,size-1);
 			
-			if (trail[i].x == px && trail[i].y == py) {
-			tail = 2;
-			alert("O jogo acabou! "+nome+", pontuação: "+score);
+			if (snake[i].x == positionX && snake[i].y == positionY) {
+				tail = 2;
+				confirm("The game is over for you "+name+" your score "+score+" points");
 			}
 			score++;
 		}
 
-		trail.push({x:px,y:py})
+		snake.push({
+			x:positionX,
+			y:positionY
+		});
 		
-		while (trail.length > tail) {
-			trail.shift();
+		while (snake.length > tail) {
+			snake.shift();
 		}
 
-		if (ax==px && ay==py) {
+		if (foodX==positionX && foodY==positionY) {
 			tail++;
-			ax = Math.floor(Math.random()*qp);
-			ay = Math.floor(Math.random()*qp);
-		}			
-	}
-	
-	function keyPush(event){
-	
-		switch(event.keyCode) {
-	
-			case 37:
-				vx = -vel;
-				vy = 0;
-				break;
-			case 38:
-				vx = 0;
-				vy = -vel;
-				break;
-			case 39:
-				vx = vel;
-				vy = 0;
-				break;
-			case 40:
-				vx = 0;
-				vy = vel;
-				break;
+			foodX = Math.floor(Math.random()*stage);
+			foodY = Math.floor(Math.random()*stage);
 		}
 	}
 }
