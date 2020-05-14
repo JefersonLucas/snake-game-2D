@@ -35,3 +35,5 @@ Divirta-se!
 Instagram [@jeferson.lucas](https://instagram.com/jeferson.luckas/)
 
 Twitter [@JefersonLuckas](https://twitter.com/JefersonLuckas)
+
+LinkedIn [Jeferson Lucas](https://www.linkedin.com/in/jeferson-lucas-08285a182/)
