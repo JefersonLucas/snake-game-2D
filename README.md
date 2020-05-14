@@ -1,6 +1,6 @@
 # Snake Game 2D - Jogo da Cobra 2D :snake:
 
-![capturar](https://user-images.githubusercontent.com/39635734/81365077-974f5980-90bd-11ea-97a5-cee89dffe2c0.png)
+![snake](https://user-images.githubusercontent.com/39635734/81754419-853e3400-948c-11ea-80da-e5d152255cb0.gif)
 
 ## EN-USA :us:
 
@@ -32,6 +32,6 @@ Divirta-se!
 
 ## Follow me! Siga-me! :grin:
 
-Instagram ![@jeferson.lucas](https://www.instagram.com/jeferson.luckas/)
+Instagram [@jeferson.lucas](https://instagram.com/jeferson.luckas/)
 
-Twitter ![@JefersonLuckas](https://twitter.com/JefersonLuckas)
+Twitter [@JefersonLuckas](https://twitter.com/JefersonLuckas)
