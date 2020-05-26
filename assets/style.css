@@ -1,0 +1,5 @@
+#canvas{
+	display: flex;
+	margin: auto;
+	border: 5px solid black;
+}
