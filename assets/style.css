@@ -1,5 +1,22 @@
+html {
+	background-image: linear-gradient(#53535f, #545663);
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 #canvas{
 	display: flex;
 	margin: auto;
-	border: 5px solid black;
+	content: "";
+	border: 2px solid #3e3c48;
+    position: absolute;
+    background-color: #4b5d15;
+    width: 500px;
+    height: 500px;
+    padding: 0px;
+    top: 40px;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 2px 2px #3e3c48;
 }

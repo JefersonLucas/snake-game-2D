@@ -8,9 +8,6 @@
 	var tamanho = 20;
 	var posicao_X = posicao_Y = Math.floor(Math.random()*palco); // Posição aleatória
 	var comida_X = comida_Y=15;
-//	Nome do jogador
-	var nome = prompt("Seu nome");
-	var nome = (nome == "" || nome == " " || nome == null || nome == undefined) ? 'Jogador' : nome;
 //
 //	Quando o jogo começa inicia uma nova função
 	window.onload = function() {
@@ -62,13 +59,13 @@
 				posicao_Y = 0;
 			}
 		//	Efeito blur
-			contexto.shadowBlur = 20;
-			contexto.shadowColor = "gray";
+			contexto.shadowBlur = 10;
+			contexto.shadowColor = "#3e3c48";
 		//	Backgroundo do palco
-			contexto.fillStyle = "#ccc";
+			contexto.fillStyle = "#4b5d15";
 			contexto.fillRect(0,0, canvas.width, canvas.height);
 		//	Contexto da comida
-			contexto.fillStyle = "red";
+			contexto.fillStyle = "black";
 			contexto.fillRect(comida_X*tamanho, comida_Y*tamanho, tamanho,tamanho);
 		//	Contexto da cobra
 			contexto.fillStyle = "black";
@@ -79,7 +76,7 @@
 				if (cobra[i].x == posicao_X && cobra[i].y == posicao_Y) {
 				//	Diminui o tamanho e exibe uma mensagem
 					rabo = 2;
-					confirm("O jogo acabou para você! "+nome+", sua pontuação foi de "+pontuacao+" pontos");
+					confirm("O jogo acabou para você!\nSua pontuação foi de "+pontuacao+" pontos");
 				}
 			//	Pontuação aumenta
 				pontuacao++;
