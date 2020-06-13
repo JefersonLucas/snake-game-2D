@@ -9,7 +9,9 @@
 
 # Jogo da Cobra 2D :snake:
 
-![cobra](https://user-images.githubusercontent.com/39635734/82859923-79bc2580-9eee-11ea-9f88-b1de5e3c6884.gif)
+<p align="center">
+  <img src=".assets/capture.png" width="500">
+</p>
 
 _"O famoso jogo da cobrinha em 2D no qual o seu objetivo é comer até ficar enorme e acumular muitos pontos."_
 
