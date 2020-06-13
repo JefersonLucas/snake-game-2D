@@ -7,10 +7,10 @@
 ![GitHub stars](https://img.shields.io/github/stars/JefersonLucas/jogo-da-cobra?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/JefersonLucas/jogo-da-cobra?style=social)
 
-# Jogo da Cobra 2D :snake:
+<h1 align="center">Jogo da Cobra 2D :snake:</h1>
 
 <p align="center">
-  <img src=".assets/capture.png" width="500">
+  <img src="assets/capture.png" width="500">
 </p>
 
 _"O famoso jogo da cobrinha em 2D no qual o seu objetivo é comer até ficar enorme e acumular muitos pontos."_
