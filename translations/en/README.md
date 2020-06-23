@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-	<img src="assets/docs/capture.png" alt="Snake Game">
+	<img src="../../docs/capture.png" alt="Snake Game">
 </p>
 
 ## Translations
