@@ -58,9 +58,6 @@
 			if (posicao_Y > palco-1) {
 				posicao_Y = 0;
 			}
-		//	Efeito blur
-			contexto.shadowBlur = 10;
-			contexto.shadowColor = "#3e3c48";
 		//	Backgroundo do palco
 			contexto.fillStyle = "#4b5d15";
 			contexto.fillRect(0,0, canvas.width, canvas.height);
