@@ -12,7 +12,7 @@
 	let rabo = 2;
 	const velocidade = 1;
 	let velocidade_X = 1;
-	let	velocidade_Y = 0;	
+	let	velocidade_Y = 0;
 	let palco = 30;
 	let tamanho = 20;
 	let posicao_X = posicao_Y = Math.floor(Math.random() * palco); // Posição aleatória
@@ -79,12 +79,13 @@
 			for (let i = 0; i < cobra.length; i++) {
 				contexto.fillRect(cobra[i].x * tamanho, cobra[i].y * tamanho, tamanho - 1,tamanho - 1);
 			//	Pontuação aumenta
-				pontuacao++;
+				pontuacao += 1;
 			//	Verifica se a cobra bateu nela mesma
 				if (cobra[i].x === posicao_X && cobra[i].y === posicao_Y) {
 				//	Diminui o tamanho e exibe uma mensagem
 					rabo = 2;
 					confirm("O jogo acabou para você!\nSua pontuação foi de " + pontuacao + " pontos");
+					clearInterval(jogo);
 				}
 			}
 		//	Objeto cobra
