@@ -12,13 +12,13 @@
 </p>
 
 <p align="center">
-	<img src="docs/capture.png" alt="Snake game">
+	<img src="assets/img/capture.png" alt="Snake game">
 </p>
 
 ## Traduções
 
 * [Original](https://github.com/JefersonLucas/snake-game-2D/blob/master/README.md)
-* [English](https://github.com/JefersonLucas/snake-game-2D/blob/master/translate/en/README.md)
+* [English](https://github.com/JefersonLucas/snake-game-2D/blob/master/translations/en/README.md)
 
 ## Começando :heavy_check_mark:
 
@@ -57,7 +57,7 @@ Você também pode [baixar](https://github.com/JefersonLucas/snake-game-2D/archi
 
 ## Ambiente
 
-Veja aqui o a página do projeto implantado por @github-pages [ver implantação](https://jefersonlucas.github.io/the-matrix-effect/).
+Veja aqui o a página do projeto implantado por @github-pages [ver implantação](https://jefersonlucas.github.io/snake-game-2D/).
 
 ## Como jogar? :video_game:
 

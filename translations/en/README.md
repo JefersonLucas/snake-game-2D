@@ -2,7 +2,7 @@
 	<h1 align="center">Snake Game 2D :snake:</h1>
 </p>
 <p align="center">
-    <img src="assets/img/logo.png" width="200" alt="Logo">
+    <img src="../../assets/img/logo.png" width="200" alt="Logo">
 </p>
     <p align="center"><em>The famous 2D snake game in which your goal is to eat until you get huge and accumulate many points</em></p>
     <p align="center">
@@ -12,13 +12,13 @@
 </p>
 
 <p align="center">
-	<img src="../../docs/capture.png" alt="Snake Game">
+	<img src="../../assets/img/capture.png" alt="Snake Game">
 </p>
 
 ## Translations
 
 * [Original](https://github.com/JefersonLucas/snake-game-2D/blob/master/README.md)
-* [English](https://github.com/JefersonLucas/snake-game-2D/blob/master/translate/en/README.md)
+* [English](https://github.com/JefersonLucas/snake-game-2D/blob/master/translations/en/README.md)
 
 ## Starting :heavy_check_mark:
 
@@ -57,7 +57,7 @@ You can also [download](https://github.com/JefersonLucas/snake-game-2D/archive/m
 
 ## Environment
 
-See here the page of the project deployed by@github-pages [view deployment](https://jefersonlucas.github.io/the-matrix-effect/).
+See here the page of the project deployed by@github-pages [view deployment](https://jefersonlucas.github.io/snake-game-2D/).
 
 ## How to play? :video_game:
 
@@ -66,7 +66,6 @@ Move using the navigation keys:
 - Down Arrow: arrow_down:
 - Right Arrow: arrow_right:
 - Left Arrow: arrow_left:
-
 
 ## Contributing :up:
 
